@@ -5,6 +5,24 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVeyorBuildDeploy", "AppVeyorBuildDeploy\AppVeyorBuildDeploy.csproj", "{21E8FF67-8F0E-4ED4-A188-0171113FC558}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Applications", "1-Applications", "{B998D2C2-E938-483A-935B-1954C735269F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Business", "2-Business", "{D9CDD444-4A11-4521-A137-88900017DB99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Infrastructure", "3-Infrastructure", "{EE278FFE-E6D8-412F-B836-C3D185990685}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Domain", "4-Domain", "{B7EEF821-366C-4719-80DD-20B0C33D2A19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Database", "5-Database", "{241B98B5-75D9-44DF-BED8-987F3BBCC5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVeyor.Services", "AppVeyor.Services\AppVeyor.Services.csproj", "{EBA4701A-B148-47CC-BF05-78DC4F7A47CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVeyor.Infrastructure", "AppVeyor.Infrastructure\AppVeyor.Infrastructure.csproj", "{1A265062-23D3-4FF1-B172-217008F75848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVeyor.Domain", "AppVeyor.Domain\AppVeyor.Domain.csproj", "{AB0292FF-BE53-46F9-9174-F83273083FD0}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AppVeyor.Database", "AppVeyor.Database\AppVeyor.Database.sqlproj", "{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +33,33 @@ Global
 		{21E8FF67-8F0E-4ED4-A188-0171113FC558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21E8FF67-8F0E-4ED4-A188-0171113FC558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21E8FF67-8F0E-4ED4-A188-0171113FC558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA4701A-B148-47CC-BF05-78DC4F7A47CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA4701A-B148-47CC-BF05-78DC4F7A47CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA4701A-B148-47CC-BF05-78DC4F7A47CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA4701A-B148-47CC-BF05-78DC4F7A47CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A265062-23D3-4FF1-B172-217008F75848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A265062-23D3-4FF1-B172-217008F75848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A265062-23D3-4FF1-B172-217008F75848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A265062-23D3-4FF1-B172-217008F75848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0292FF-BE53-46F9-9174-F83273083FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0292FF-BE53-46F9-9174-F83273083FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0292FF-BE53-46F9-9174-F83273083FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0292FF-BE53-46F9-9174-F83273083FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21E8FF67-8F0E-4ED4-A188-0171113FC558} = {B998D2C2-E938-483A-935B-1954C735269F}
+		{EBA4701A-B148-47CC-BF05-78DC4F7A47CC} = {D9CDD444-4A11-4521-A137-88900017DB99}
+		{1A265062-23D3-4FF1-B172-217008F75848} = {EE278FFE-E6D8-412F-B836-C3D185990685}
+		{AB0292FF-BE53-46F9-9174-F83273083FD0} = {B7EEF821-366C-4719-80DD-20B0C33D2A19}
+		{191BB07A-DE96-4BA9-B830-A7FEF88C5FBE} = {241B98B5-75D9-44DF-BED8-987F3BBCC5E3}
 	EndGlobalSection
 EndGlobal

@@ -2,3 +2,11 @@
 /AppVeyorBuildDeploy/AppVeyorBuildDeploy/obj
 /AppVeyorBuildDeploy/bin
 /AppVeyorBuildDeploy/obj
+/AppVeyor.Services/bin
+/AppVeyor.Services/obj
+/AppVeyor.Infrastructure/bin
+/AppVeyor.Infrastructure/obj
+/AppVeyor.Domain/bin
+/AppVeyor.Domain/obj
+/AppVeyor.Database/bin
+/AppVeyor.Database/obj
