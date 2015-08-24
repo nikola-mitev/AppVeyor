@@ -1,8 +1,12 @@
+version: 1.0.{build}
+build:
+  verbosity: minimal
 deploy:
-  provider: FTP
-  protocol: ftps
+- provider: FTP
   host: ftp.myasp.net
-  username: dejanciev1-001 
-  password: 123qweQWE!!!
-  folder: root
-  artifact: /.*\.nupkg/ 
+  protocol: ftp
+  username: dejanciev1-001
+  password:
+    secure: UJk2qgHXtDokfUeNn/TvzA==
+  folder: 
+  active_mode: false
