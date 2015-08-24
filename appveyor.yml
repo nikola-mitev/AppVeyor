@@ -6,7 +6,7 @@ deploy:
   host: ftp.myasp.net
   protocol: ftp
   username: dejanciev1-001
-  password:
+  password: 123qweQWE!!!
     secure: UJk2qgHXtDokfUeNn/TvzA==
   folder: 
   active_mode: false
