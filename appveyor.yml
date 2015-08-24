@@ -2,6 +2,7 @@
   protocol: ftps
   host: ftp.myasp.net
   username: dejanciev1-001 
-  password:123qweQWE!!!
+  password: 123qweQWE!!!
+    secure: AABBBCCCCddd123==
   folder: root
   artifact: /.*\.nupkg/ 
